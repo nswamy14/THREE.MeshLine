@@ -59,7 +59,7 @@
 				this.counters[j * 2 + 1] = c;
 				// this.counters.push(c);
 				// this.counters.push(c);
-				let o = (j < (l / 2)) ? ((1 / l) * j) * 2 : ((1 / l) * ((l / 2) - j) + 0.5) * 2;
+				let o = (j < (l / 3)) ? ((3 / l) * j) : (j > (3 * l / 4) ? ((3 / l) * (3 * (l / 4) - j) + 0.5) * 2 :  1);
 				o = o || 0.01;
 				o = this.useDash ? 1.0 : o;
 				// this.opacity.push( o );
@@ -90,7 +90,7 @@
 				this.counters[j * 2 + 1] = c;
 				// this.counters.push(c);
 				// this.counters.push(c);
-				let o = (j < (l / 2)) ? ((1 / l) * j) * 2 : ((1 / l) * ((l / 2) - j) + 0.5) * 2;
+				let o = (j < (l / 3)) ? ((3 / l) * j) : (j > (3 * l / 4) ? ((3 / l) * (3 * (l / 4) - j) + 0.5) * 2 :  1);
 				o = o || 0.01;
 				o = this.useDash ? 1.0 : o;
 				// this.opacity.push( o );
