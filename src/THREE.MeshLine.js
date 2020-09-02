@@ -554,6 +554,7 @@
 		// '    if( useMap == 1. ) c *= texture2D( map, vUV * repeat );',
 		// '    if( useAlphaMap == 1. ) c.a *= texture2D( alphaMap, vUV * repeat ).a;',
 		'    if( c.a < alphaTest ) discard;',
+		'    if( visibility == 0.0 ) discard;',
 		'    if( useDash == 1. ) {',
 		'        c.a *= ceil(mod(vCounters + dashOffset, dashArray) - (dashArray * dashRatio));',
 		'    }',
