@@ -361,14 +361,14 @@
 			this.attributes.opacity.copyArray(new Float32Array(this.opacity));
 			this.attributes.opacity.needsUpdate = true;
 		}
-		this.geometry.addAttribute('aopacity', this.attributes.opacity);
-		this.geometry.addAttribute('position', this.attributes.position);
-		this.geometry.addAttribute('previous', this.attributes.previous);
-		this.geometry.addAttribute('next', this.attributes.next);
-		this.geometry.addAttribute('side', this.attributes.side);
-		this.geometry.addAttribute('width', this.attributes.width);
+		this.geometry.setAttribute('aopacity', this.attributes.opacity);
+		this.geometry.setAttribute('position', this.attributes.position);
+		this.geometry.setAttribute('previous', this.attributes.previous);
+		this.geometry.setAttribute('next', this.attributes.next);
+		this.geometry.setAttribute('side', this.attributes.side);
+		this.geometry.setAttribute('width', this.attributes.width);
 		// this.geometry.addAttribute('uv', this.attributes.uv);
-		this.geometry.addAttribute('counters', this.attributes.counters);
+		this.geometry.setAttribute('counters', this.attributes.counters);
 
 		this.geometry.setIndex(this.attributes.index);
 	};
